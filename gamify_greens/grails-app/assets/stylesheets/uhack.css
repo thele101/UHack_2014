@@ -1,0 +1,273 @@
+/*NORMALIZE*/
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body,
+html {
+	margin: 0;
+	height: 100%;
+	padding: 0;	
+    font-family: Geneva, sans-serif;
+}
+
+body{
+	background-color: Whitesmoke;
+	height: 100%;
+}
+
+#header {
+	height: 60px;
+	font: Tahoma;	
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #669999;
+	color: #141433;
+	padding: 6px;
+}
+
+#footer {
+	text-align: center;
+	padding: 2px;
+}
+
+#menu {
+    width: 100%;
+    height: 36px;
+    border-bottom: 2px solid;
+    border-color: #141433;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #141433;
+}
+
+#menu ul {
+	width: 100%;
+    height: 100%;
+	display: inline-table;
+    margin: 0px;
+}
+
+#menu li { 
+	width: 25%;
+	display: table-cell; 
+    vertical-align: middle;
+	height: 100%;
+}
+
+#menu a {
+	height: 100%;
+    text-decoration: none;
+    vertical-align: middle;
+	color: #9c9;
+	padding: 8px 8px 8px 8px;
+}
+
+#menu li:hover {
+    background-color: #3366CC;
+}
+
+#menu a:hover {
+    color: #141433;
+    text-decoration: underline;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px 2px 4px 2px;
+}
+
+h3 {
+	font-size: 24px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px 2px 4px 2px;
+}
+
+/* 2 column body content */
+.colmask {
+	clear: both;
+	float: left;
+	width: 100%;			
+	height: 100%;
+	overflow: hidden;		
+}
+
+.colleft {
+	float: left;
+	width: 100%;		
+	height: 100%;
+	position:relative;
+}
+
+.col1,
+.col2 {
+	float: left;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	padding: 6px 2px 0px 2px;
+	overflow: hidden;
+}
+
+.doublepage {
+	height: 100%;
+	background: #9c9;		/* right column background colour */
+}
+
+.doublepage .colleft {
+	height: 100%;
+	right: 50%;			/* right column width */
+	background: Whitesmoke;		/* left column background colour */
+}
+
+.doublepage .col1 {
+	height: 100%;
+	width: 46%;			/* left column content width (column width minus left and right padding) */
+	left: 52%;			/* right column width plus left column left padding */
+}
+
+.doublepage .col2 {
+	height: 100%;
+	width: 46%;			/* right column content width (column width minus left and right padding) */
+	left: 56%;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+}
+
+input {
+	border: none;
+	background-color: #34495e;
+	box-shadow: 0 1px 0 #2392F3 inset, 0 -1px 0 #2392F3 inset, 1px 0 0 #2392F3 inset, -1px 0 0 #2392F3 inset, 0 0 4px rgba(35,146,243,0.5);	    
+	color: whitesmoke;
+}
+
+textarea {
+	border: none;
+	background-color: #34495e;
+}
+
+/* Twitter widget */
+#tweets {
+	text-align: left;
+	vertical-align: middle;
+}
+
+.twitStream {
+    font-family: verdana;
+    font-size: 11px;
+}
+
+.twitStream a {
+    font-family: verdana;
+    font-size: 11px;
+}
+
+.tweet {
+    display: block;
+    padding: .4em;
+    margin: .4em 0;
+}
+
+.tweet-left {
+    float: left;
+    margin-right: 1em;
+}
+
+.tweet-left img {
+    border: 2px solid #000000;
+}
+
+.tweet p.text {
+    margin: 0;
+    padding: 0;
+}
+
+/* Rewards tracker */
+.coupon {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: Whitesmoke;
+    height: 80px;
+    width: 400px;
+    padding: 10px;
+    border: 3px dashed #21303b;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.coupon > div {
+	margin-top: 30px;
+}
+
+/* Progress tracker */
+#progress img {
+	width: 160px;
+	height: 160px;
+	padding: 4px;
+}
+
+.bl {
+	text-align: center;
+	display: block;
+	padding: 10px;
+}
+
+.bl > span {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	padding: 4px;
+}
+
+#productsInput {
+	/* UHack.... */
+	margin-left: -133px;
+	padding: 4px;
+	color: whitesmoke;
+}
+
+.meter { 
+	height: 20px;  
+	position: relative;
+	background: #555;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.meter > span {
+	display: block;
+	height: 100%;
+	background-color: #2BC253;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+}
+
+#bigTree{
+	float:right;
+}
+#flowerGarden {
+	bottom:0px;width:100%
+	
+}
+
+textarea, .textareaClone {
+    width: 265px;
+}
+
